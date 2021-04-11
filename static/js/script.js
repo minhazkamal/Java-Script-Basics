@@ -366,7 +366,6 @@ function comuputeWinner()
         }
         else if(YOU['score'] < DEALER['score'])
         {
-            winner = 'DRAW!';
             BlackJackGames['draws']++;
         }
     }
@@ -377,7 +376,6 @@ function comuputeWinner()
     }
     else if(YOU['score'] > 21 && DEALER['score'] > 21)
     {
-        winner = 'DRAW';
         BlackJackGames['draws']++;
     }
 
@@ -404,7 +402,7 @@ function showResults(winner)
             messageColor = 'red';
             lostSOund.play();
         }
-        else if(winner === 'DRAW')
+        else
         {
             document.querySelector('#draws').textContent = BlackJackGames['draws'];
             message = 'You Drew!';

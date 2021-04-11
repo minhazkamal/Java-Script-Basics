@@ -1,5 +1,5 @@
 .container-1, .container-2, .container-3, .container-4, .container-5 {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 75%;
     margin: 0 auto;
     text-align: center;

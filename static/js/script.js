@@ -364,7 +364,7 @@ function comuputeWinner()
             winner = DEALER;
             BlackJackGames['losses']++;
         }
-        else if(YOU['score'] < DEALER['score'])
+        else if(YOU['score'] === DEALER['score'])
         {
             BlackJackGames['draws']++;
         }
